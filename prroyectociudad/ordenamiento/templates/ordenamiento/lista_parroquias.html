@@ -1,0 +1,7 @@
+<h1>Lista de Parroquias</h1>
+<ul>
+    {% for parroquia in parroquias %}
+        <li>{{ parroquia.nombre }} - {{ parroquia.ubicacion }} - {{ parroquia.tipo }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'crear_parroquia' %}">Crear Parroquia</a>
